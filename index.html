@@ -11,9 +11,25 @@
             var confirmResult = confirm('are you sure?');
 
             var age = prompt('Enter age', '');
-            alert('You will soon be ' + Number(age) + 1 + ' years old!');
+            alert('You will soon be ' + (Number(age) + 1) + ' years old!');
             
-
+            var age = prompt('Enter age', '');
+if(isNaN(age)){
+   age = 0;
+   alert('You need to enter a valid number');
+}
+else if(Number(age) >= 50) {
+   age = Number(age) + 1;
+   alert('You\'re old! You will soon be ' + age + ' years old!');
+}
+else if(Number(age) <= 20) {
+   age = Number(age) + 1;
+   alert('You\'re a baby! You will soon be ' + age + ' years old!');
+}
+else
+{
+   alert('You will soon be ' + (Number(age) + 1) + ' years old!');
+}
 
         </script>
     </head>
